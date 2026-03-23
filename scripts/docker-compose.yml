@@ -46,7 +46,7 @@ services:
         echo "wasm/multi-thread";  ls -lh wasm/multi-thread
 
         # copy output files
-        mkdir -p src/multi-thread
+        mkdir -p src/single-thread src/multi-thread
         cp wasm/multi-thread/wllama.js         src/multi-thread
         cp wasm/multi-thread/wllama.wasm       src/multi-thread
         cp wasm/single-thread/wllama.js        src/single-thread
